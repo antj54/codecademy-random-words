@@ -1,5 +1,5 @@
 const fortunes = {
-    partOne: ["You", "We"],
+    partOne: ["You",],
     
     partTwo: ["are having", "are seeking", "will see", "should have", "won't have", 
     "won't see", "will experience", "won't experience", "will be", "won't be",
@@ -36,12 +36,15 @@ const fortunes = {
 
 };
 
-let wordOne = fortunes.partOne[Math.floor(Math.random() * 2)];
+// Declaring the random words that will be generated as variables
 
-let wordTwo = fortunes.partTwo[Math.floor(Math.random() * 50)];
+let wordOne = fortunes.partOne[Math.floor(Math.random() * fortunes.partOne.length)];
 
-let wordThree = fortunes.partThree[Math.floor(Math.random() * 62)];
+let wordTwo = fortunes.partTwo[Math.floor(Math.random() * fortunes.partTwo.length)];
 
+let wordThree = fortunes.partThree[Math.floor(Math.random() * fortunes.partThree.length)];
+
+//  logs the random words to the console
 
 function randomFortune () {
     console.log(`${wordOne} ${wordTwo} ${wordThree}.`);
