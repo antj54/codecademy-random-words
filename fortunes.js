@@ -32,4 +32,19 @@ const fortunes = {
     "Avenged Sevenfold", "a good book", "many good books", "the Demogorgon", 
     "Marvel but before Disney ruined it", "night terrors", "good health", "bad health", 
     "a nice car", "a private plane", "Dr. Nick Beans", "the great state of Ohio"],
-}
+
+
+};
+
+let wordOne = fortunes.partOne[Math.floor(Math.random() * 2)];
+
+let wordTwo = fortunes.partTwo[Math.floor(Math.random() * 50)];
+
+let wordThree = fortunes.partThree[Math.floor(Math.random() * 62)];
+
+
+function randomFortune () {
+    console.log(`${wordOne} ${wordTwo} ${wordThree}.`);
+};
+
+randomFortune();
