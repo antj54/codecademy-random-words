@@ -60,6 +60,14 @@ button {
     text-align: center;
 }
 
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
 @media only screen and (max-width: 768px) {
     header {
         margin-top: 5rem;

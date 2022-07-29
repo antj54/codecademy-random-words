@@ -12,11 +12,19 @@
     <header>
         <h1>Funky Fortunes</h1>
     </header>
-    <section>
-        <h3>Press the button to generate your Funky Fortune!</h3>
-        <img src = "./img/sorcerer-hands-discern-the-future-780927.png">
+    <div id = content>
+      <section >
+          <h3>Press the button to generate your Funky Fortune!</h3>
+          <img src = "./img/sorcerer-hands-discern-the-future-780927.png">
         
-    </section>
-    <button>Get My Fortune</button>
+      </section>
+    <div id = buttons>
+      <button id = fortune-button>Get My Fortune</button>
+      <button id = reset>Reset</button>
+    </div>
+    </div>
+    <audio id = audio src = "./sounds/decidemp3-14575.mp3"></audio>
+    <script src = "./fortunes.js">
+    </script>
 </body>
 </html>

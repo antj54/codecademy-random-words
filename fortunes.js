@@ -36,9 +36,10 @@ const fortunes = {
 
 };
 
-
-
-
+let fortuneButton = document.getElementById('fortune-button');
+let resetButton = document.getElementById('reset')
+let node = document.createElement('p');
+node.id = "random-fortune";
 
 //  function to generate random fortune
 
@@ -46,8 +47,18 @@ function randomFortune () {
     let wordOne = fortunes.partOne[Math.floor(Math.random() * fortunes.partOne.length)];
     let wordTwo = fortunes.partTwo[Math.floor(Math.random() * fortunes.partTwo.length)];
     let wordThree = fortunes.partThree[Math.floor(Math.random() * fortunes.partThree.length)];
+  
+    node.innerHTML = `${wordOne} ${wordTwo} ${wordThree}.`;
+    document.getElementById('content').appendChild(node);
     
-    console.log(`${wordOne} ${wordTwo} ${wordThree}.`);
 };
 
-randomFortune();
+function reset() {
+    document.getElementById('random-fortune').innerHTML = ""
+    
+}
+
+
+fortuneButton.addEventListener('click', randomFortune);
+
+resetButton.addEventListener('click', reset);
