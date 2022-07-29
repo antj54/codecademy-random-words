@@ -36,17 +36,17 @@ const fortunes = {
 
 };
 
-// Declaring the random words that will be generated as variables
 
-let wordOne = fortunes.partOne[Math.floor(Math.random() * fortunes.partOne.length)];
 
-let wordTwo = fortunes.partTwo[Math.floor(Math.random() * fortunes.partTwo.length)];
 
-let wordThree = fortunes.partThree[Math.floor(Math.random() * fortunes.partThree.length)];
 
-//  logs the random words to the console
+//  function to generate random fortune
 
 function randomFortune () {
+    let wordOne = fortunes.partOne[Math.floor(Math.random() * fortunes.partOne.length)];
+    let wordTwo = fortunes.partTwo[Math.floor(Math.random() * fortunes.partTwo.length)];
+    let wordThree = fortunes.partThree[Math.floor(Math.random() * fortunes.partThree.length)];
+    
     console.log(`${wordOne} ${wordTwo} ${wordThree}.`);
 };
 
