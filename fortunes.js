@@ -40,7 +40,7 @@ let fortuneButton = document.getElementById('fortune-button');
 let resetButton = document.getElementById('reset')
 let node = document.createElement('p');
 node.id = "random-fortune";
-
+let audio = new Audio("./sounds/magic.mp3");
 //  function to generate random fortune
 
 function randomFortune () {
@@ -58,6 +58,8 @@ function reset() {
     
 }
 
+
+fortuneButton.addEventListener('click', (e) => {audio.play()})
 
 fortuneButton.addEventListener('click', randomFortune);
 
